@@ -15,7 +15,7 @@ public class PlayerPlatform : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Platform"))
         {
-            transform.parent = null;
+            transform.SetParent(null);
         }
     }
 }

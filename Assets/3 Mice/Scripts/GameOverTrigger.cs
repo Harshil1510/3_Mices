@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameOverTrigger : MonoBehaviour
 {
-    public GameObject gameOverPanel; 
+    public GameObject gameOverPanel;
 
     private void OnTriggerEnter2D(Collider2D other)
     {

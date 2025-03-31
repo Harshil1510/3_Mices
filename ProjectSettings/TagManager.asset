@@ -9,6 +9,7 @@ TagManager:
   - Target
   - box
   - Platform
+  - Game Object
   layers:
   - Default
   - TransparentFX

@@ -1,5 +1,4 @@
 
-using UnityEngine;
 public class Playermanager : MonoBehaviour
 {
     public GameObject gameOverPanel;
