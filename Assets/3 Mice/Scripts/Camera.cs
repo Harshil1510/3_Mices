@@ -10,6 +10,7 @@ public class Camera : MonoBehaviour
     internal static Camera MainCamera;
     internal static Camera main;
     public GameObject target;
+    internal float orthographicSize;
 
     internal Vector2 ScreenToWorldPoint(Vector3 vector3)
     {

@@ -9,7 +9,7 @@ public class mainmenu : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(1);
     }
-    public void QuitGame()  
+    public void QuitGame()
     {
         Application.Quit();
     }
@@ -18,3 +18,4 @@ public class mainmenu : MonoBehaviour
         SceneManager.LoadSceneAsync(0);
     }
 }
+

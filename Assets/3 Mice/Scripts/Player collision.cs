@@ -8,7 +8,7 @@ private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.transform.tag == "Enemy")
         {
-           Playermanager.IsGameOver = true;
+            Playermanager.IsGameOver = true;
         }
     }
 }

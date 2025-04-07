@@ -20,7 +20,8 @@ public class Movement : MonoBehaviour
             newPlatform.AddComponent<BoxCollider2D>();
             newPlatform.transform.localScale = new Vector3(2f, 0.5f, 1f);
 
-            Vector2 startPos = startpoint[i].transform.position;
+            Vector3 position = startpoint[i].transform.position;
+            Vector2 startPos = position;
             Vector2 endPos = startPos + new Vector2(5f, 0);
 
             newPlatform.transform.position = startPos;

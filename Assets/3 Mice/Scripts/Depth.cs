@@ -5,11 +5,12 @@ using UnityEngine.UI;
 
 public class Depth : MonoBehaviour
 {
-    public Text depthText;
-    public GameObject gameOverPanel;
+    public Text depthText; 
+    public Text gameOverDepthText;
+    public GameObject gameOverPanel; 
     private float startY;
     private int maxDepth = 0;
-    private bool hasStarted = false;
+    private bool hasStarted = false; 
 
     void Start()
     {
@@ -22,30 +23,30 @@ public class Depth : MonoBehaviour
         int depth = Mathf.FloorToInt(startY - transform.position.y);
         if (!hasStarted && depth > 0)
         {
-            depthText.gameObject.SetActive(true);
-            hasStarted = true;
+            depthText.gameObject.SetActive(true); 
+            hasStarted = true; 
         }
-        if (depth > maxDepth)
+        if (depth > maxDepth) 
         {
             maxDepth = depth;
-            depthText.text = "" + maxDepth.ToString();
+            depthText.text = maxDepth.ToString(); 
         }
-        if (transform.position.y < -250)
+        if (transform.position.y < -250) 
         {
             GameOver();
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy")) 
         {
             GameOver();
         }
     }
     void GameOver()
     {
-        gameOverPanel.SetActive(true);
-        Time.timeScale = 0;
+        gameOverDepthText.text = "Your score is : " + maxDepth.ToString();
+        gameOverPanel.SetActive(true); 
+        Time.timeScale = 0; 
     }
 }
-

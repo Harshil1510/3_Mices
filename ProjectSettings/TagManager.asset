@@ -10,6 +10,8 @@ TagManager:
   - box
   - Platform
   - Game Object
+  - Trigger
+  - Destory
   layers:
   - Default
   - TransparentFX
